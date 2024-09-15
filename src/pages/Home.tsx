@@ -133,7 +133,7 @@ const Home: React.FC = () => {
         start: 'top bottom-=100',
         end: 'bottom top+=100',
         scrub: true,
-      });
+      } as ScrollTrigger.BatchVars);
     };
 
     animateElements(features);
