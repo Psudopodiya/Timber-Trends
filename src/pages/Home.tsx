@@ -178,46 +178,58 @@ const Home: React.FC = () => {
   };
 
   const cards = [
-    { id: 1, title: 'Living Room', src: 'src/assets/living_room.avif' },
-    { id: 2, title: 'Bed Room', src: 'src/assets/bed_room.avif' },
-    { id: 3, title: 'Waiting Room', src: 'src/assets/waiting_room.avif' },
+    {
+      id: 1,
+      title: 'Living Room',
+      src: '/assets/home_page/header_sections/living_room.avif',
+    },
+    {
+      id: 2,
+      title: 'Bed Room',
+      src: '/assets/home_page/header_sections/bed_room.avif',
+    },
+    {
+      id: 3,
+      title: 'Waiting Room',
+      src: '/assets/home_page/header_sections/waiting_room.avif',
+    },
   ];
 
   const items = [
     {
       title: 'Chairs',
       description: 'Description for Item 1',
-      src: 'src/assets/home_page/featured_categories/chair.png',
+      src: '/assets/home_page/featured_categories/chair.png',
     },
     {
       title: 'Wall Clock',
       description: 'Description for Item 2',
-      src: 'src/assets/home_page/featured_categories/clock.png',
+      src: '/assets/home_page/featured_categories/clock.png',
     },
     {
       title: 'Pillow',
       description: 'Description for Item 3',
-      src: 'src/assets/home_page/featured_categories/pillow.png',
+      src: '/assets/home_page/featured_categories/pillow.png',
     },
     {
       title: 'Desks',
       description: 'Description for Item 4',
-      src: 'src/assets/home_page/featured_categories/desk.png',
+      src: '/assets/home_page/featured_categories/desk.png',
     },
     {
       title: 'Mirror',
       description: 'Description for Item 5',
-      src: 'src/assets/home_page/featured_categories/mirror.png',
+      src: '/assets/home_page/featured_categories/mirror.png',
     },
     {
       title: 'Rugs',
       description: 'Description for Item 6',
-      src: 'src/assets/home_page/featured_categories/rugs.jpg',
+      src: '/assets/home_page/featured_categories/rugs.jpg',
     },
     {
       title: 'Wall Decore',
       description: 'Description for Item 7',
-      src: 'src/assets/home_page/featured_categories/wall_decore.jpg',
+      src: '/assets/home_page/featured_categories/wall_decore.jpg',
     },
   ];
 
@@ -288,7 +300,7 @@ const Home: React.FC = () => {
             <CollectionCard
               title="Accent Chairs"
               items={['Arm chair', 'wheel chair', 'wing chair', 'cafe chair']}
-              backgroundImage="src/assets/home_page/chair.png"
+              backgroundImage="/assets/home_page/chair.png"
             />
             <div className="flex flex-col gap-5 md:flex-row">
               <CollectionCard
@@ -299,13 +311,13 @@ const Home: React.FC = () => {
                   'Study Lamps',
                   'Lighting Lamps',
                 ]}
-                backgroundImage="src/assets/home_page/lamp.png"
+                backgroundImage="/assets/home_page/lamp.png"
                 className="w-full md:w-1/2"
               />
               <div
                 className="flex w-full flex-col items-center justify-center gap-2 rounded-lg px-4 py-6 text-white md:w-1/2"
                 style={{
-                  backgroundImage: 'url(src/assets/header_bg.png)',
+                  backgroundImage: 'url(/assets/header_bg.png)',
                   backgroundSize: 'contain',
                 }}
               >
@@ -319,7 +331,7 @@ const Home: React.FC = () => {
           <CollectionCard
             title="Accent Chairs"
             items={['Arm chair', 'wheel chair', 'wing chair', 'cafe chair']}
-            backgroundImage="src/assets/home_page/chair.png"
+            backgroundImage="/assets/home_page/chair.png"
             className="w-full md:w-2/5"
           />
         </div>

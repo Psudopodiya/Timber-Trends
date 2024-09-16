@@ -15,7 +15,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <div
         className="py-20"
         style={{
-          backgroundImage: 'url(src/assets/header_bg.png)',
+          backgroundImage: 'url(/assets/header_bg.png)',
           backgroundSize: '40%',
         }}
       >

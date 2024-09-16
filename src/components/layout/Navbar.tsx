@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="mb-20 flex items-center justify-between gap-5 bg-transparent px-32 text-white">
       <div>
-        <img src="src/assets/logo_1.png" className="w-24" alt="Logo" />
+        <img src="/assets/logo.png" className="w-24" alt="Logo" />
       </div>
       <div className="flex items-center gap-6">
         <NavbarLink name="Home" link="/" />
